@@ -104,6 +104,8 @@ Durante el curso, cubrimos desde los principios básicos del control de versione
 
        -Confirmar todos los cambias y estos se les genera una ID
 
+ ![Estadosdegit](imagenes/foto012.jpg)   
+
   vamos explicando cada punto:
 
   -Git observa tus archivos y los clasifica en dos estados principales:
@@ -112,7 +114,7 @@ Durante el curso, cubrimos desde los principios básicos del control de versione
     Modified: archivos que ya estaban en Git y fueron modificados, eliminados o renombrados.
  
   Los archivos que no están en .gitignore siempre entran en uno de estos estados según los cambios que hagas.
-  
+
 
   Pero que pasa si yo quiero volver a un estado o version anterior, por decir hice un cambio que no funciono o borre algo importante
 
@@ -126,6 +128,8 @@ Durante el curso, cubrimos desde los principios básicos del control de versione
 
  simplemento lo guardas en el archivo gitignore.
 
+   ![EjemploGitignore](imagenes/CapturadePantallaEjemplodeUsoGitIgnore.png)
+
 -Lo siguien es el stage donde se seleccionan los archivos que seran parte del siguiente commit 
 
 los comandos para esto son:
@@ -138,6 +142,8 @@ los comandos para esto son:
 
  donde el primero solo añade un archivo especifico y el otro añade todos los cambios.
 
+ ![Gitadd](imagenes/CapturaEjemploGitAdd.png)
+
 -Y finalmente se hace el commit que guarda todos los cambios que propusiste en el stage 
 el comando es:
 
@@ -146,6 +152,8 @@ el comando es:
 Pero puede pasar que hiciste un commit equivocado para eliminar el commit es:
 
     git reset --soft HEAD~1
+
+   ![Eliminarcommit](imagenes/CapturaEjemploDeEliminarCommit.png)
 
 hay que recalcar que esta se va eliminando segun el orden, eliminara el ultimo commit que hiciste y para eliminar mas cambia el 1 por 2 o 3 pero eso no deberia pasar.    
  
@@ -192,5 +200,9 @@ Usar prefijos para identificar que tipo de cambios se hiso:
  Pero existen casos donde los 50 caracteres no son suficientes para heso hacer un commit mas extenso el comando es:
 
       git commit
- 
-      
+
+Y se abrira un editor de texto normalmente Vim hay en la primera fila es el nombre del commit y la segunda la explicacion del commit.
+
+![commitlargo](imagenes/CapturaCommitExtenso.png)
+
+
