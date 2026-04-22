@@ -126,4 +126,25 @@ Durante el curso, cubrimos desde los principios básicos del control de versione
 
  simplemento lo guardas en el archivo gitignore.
 
- 
+-Lo siguien es el stage donde se seleccionan los archivos que seran parte del siguiente commit 
+
+los comandos para esto son:
+
+    git add Archivo.txt
+
+    o 
+   
+    git add .
+
+ donde el primero solo añade un archivo especifico y el otro añade todos los cambios.
+
+-Y finalmente se hace el commit que guarda todos los cambios que propusiste en el stage 
+el comando es:
+
+    git commit -m "detalles del commit"
+
+Pero puede pasar que hiciste un commit equivocado para eliminar el commit es:
+
+    git reset --soft HEAD~1
+
+hay que recalcar que esta se va eliminando segun el orden, eliminara el ultimo commit que hiciste y para eliminar mas cambia el 1 por 2 o 3 pero eso no deberia pasar.    
