@@ -148,3 +148,49 @@ Pero puede pasar que hiciste un commit equivocado para eliminar el commit es:
     git reset --soft HEAD~1
 
 hay que recalcar que esta se va eliminando segun el orden, eliminara el ultimo commit que hiciste y para eliminar mas cambia el 1 por 2 o 3 pero eso no deberia pasar.    
+ 
+  ### Buenas Practicas
+
+  Commits atómicos y buenas prácticas
+
+Los commits atómicos consisten en que cada commit represente un cambio pequeño, lógico y completo.
+
+Es mejor hacer varios commits pequeños con sentido que uno grande con muchos cambios.
+
+Usa verbos imperativos:
+
+    Add → agregar
+
+    Change → modificar
+
+    Fix → corregir
+
+    Remove → eliminar
+    
+    No uses punto final ni “…”
+
+    Máximo 50 caracteres (ser claro y conciso)
+
+Usar prefijos para identificar que tipo de cambios se hiso:
+
+     docs: explain staging area with examples
+
+ los prefijos mas comunes son : 
+
+     feat: nueva funcionalidad
+
+    fix: corrección de errores
+
+    docs: documentación
+
+    refactor: mejora interna del código
+
+    style: formato (espacios, tabs, etc.)
+
+    test: pruebas
+ 
+ Pero existen casos donde los 50 caracteres no son suficientes para heso hacer un commit mas extenso el comando es:
+
+      git commit
+ 
+      
