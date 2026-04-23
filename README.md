@@ -216,4 +216,104 @@ Y se abrira un editor de texto normalmente Vim hay en la primera fila es el nomb
 
    a veces los confunden pensando que es lo mismo pero nada mas alejado dela realidad ya que git es donde se guardan los cambios y github donde se almacenan.
 
+  ### SSH vs HTTPS
+
+  ### SSH
+
+   
+    Es una forma segura de conectarte a GitHub sin usar usuario ni contraseña cada vez
+
+    Creas una clave en tu computadora
+    Le das una copia a GitHub
+    Cuando te conectas, se reconocen automáticamente
+
+  ### HTTPS
+
+    Es una forma de conectarte a GitHub usando usuario + token
+
+    GitHub te pide:
+     -usuario
+          -token (como una contraseña especial)
+          -Puede guardarse en tu PC
+     -Luego ya no te lo vuelve a pedir
+
+  ### Configuracion SSH 
+
+   En esta parte me ayude de una pagina que explica como generar las claves SSH ya que no logre entender muy bien durante la clase 
+
+   [Generación de una nueva clave SSH y adición al agente SSH](https://docs.github.com/es/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)   
+
+   obviamente no lo segui al pie de la letra pero trate de hacer lo mas cercano ala clase 
+
+   Ayudandome de la clase, la pagina y la IA pude hacer la configuracion con los siguientes pasos:
+
+      1._ Crear clave SSH 
+
+         ssh-keygen -t ed25519 -C  "jheronconde032@gmail.com"
+
+         Con esto una clave pública y privada para identificar la computadora con GitHub
+
+      2._  Iniciar el agente SSH
+
+        eval "$(ssh-agent -s)"
+
+        Activa un proceso que gestiona tus claves SSH en segundo plano
+
+      3._   Añadir la clave al agente
+
+        ssh-add ~/.ssh/id_ed25519
+
+        Registra tu clave para que pueda usarse automáticamente sin pedirla cada vez
+
+      4._ Copiar la clave pública
+
+         cat ~/.ssh/id_ed25519.pub
+
+       Muestra tu clave pública para copiarla y registrarla en GitHub
+
+      5._Agregar la clave en GitHub
+
+       creamos una nueva llave SSH y colocamos la clave publica hay
+
+      6._ Verificamos si se conecto
+
+        ssh -T git@github.com
+
+      7._ Usar SSH en el repositorio y verificamos si funciono
+ 
+           git remote set-url origin git@github.com:usuario/repositorio.git
+
+           git remote -v
+
+  ### Crear un repositorio en github
+
+  bueno me acavo de dar cuenta que lo vingule al repositorio sin antes mostrar como se crea 
+
+  pero no es complicado simplemente es ir a tu perfil de github e ir ala seccion new repository. 
+
+
+
+  para conectarlo se usan los siguientes comandos 
+
+           git remote add origin git@github.com:2CONDE2/Apuntes_Git_2026
+
+          git branch -M main
+
+          este cambia el nombre de la rama en mi caso no fue necesario por que ya se llamaba main pero hay el caso que se llama master lo recomendable es que se llame main.
+
+          git push -u origin main
+
+          y con esto ya puedes subir los cambios a github esto normalmente para la primera vez 
+           ya despues puedes usar simplemente 
+           git push 
+
+  ### clonar un repositorio en Git
+
+   hay dos maneras dependiendo de la llave que tengas como yo estoy usando ssh seria con el siguiente comando 
+
+     git clone git@github.com:2CONDE2/Apuntes_Git_2026
+
+     
+
+
    
