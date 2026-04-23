@@ -206,3 +206,14 @@ Y se abrira un editor de texto normalmente Vim hay en la primera fila es el nomb
 ![commitlargo](imagenes/CapturaCommitExtenso.png)
 
 
+## Clase 3️⃣
+
+ ### GIT HUB Y SSH
+
+   ### ¿Que es GitHub?
+
+   Se podria decir que es la nube de git y tambien una red social, donde se pueden subir proyectos personales y tambien poder trabajar en equipo esos proyecots.
+
+   a veces los confunden pensando que es lo mismo pero nada mas alejado dela realidad ya que git es donde se guardan los cambios y github donde se almacenan.
+
+   
