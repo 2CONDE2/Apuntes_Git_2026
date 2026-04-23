@@ -216,6 +216,8 @@ Y se abrira un editor de texto normalmente Vim hay en la primera fila es el nomb
 
    a veces los confunden pensando que es lo mismo pero nada mas alejado dela realidad ya que git es donde se guardan los cambios y github donde se almacenan.
 
+   ![logogit](imagenes/LogoGit.jpg)
+
   ### SSH vs HTTPS
 
   ### SSH
@@ -227,6 +229,8 @@ Y se abrira un editor de texto normalmente Vim hay en la primera fila es el nomb
     Le das una copia a GitHub
     Cuando te conectas, se reconocen automáticamente
 
+  ![ssh](imagenes/SSH.png)
+
   ### HTTPS
 
     Es una forma de conectarte a GitHub usando usuario + token
@@ -236,6 +240,8 @@ Y se abrira un editor de texto normalmente Vim hay en la primera fila es el nomb
           -token (como una contraseña especial)
           -Puede guardarse en tu PC
      -Luego ya no te lo vuelve a pedir
+
+  ![https](imagenes/HTTPS.webp)
 
   ### Configuracion SSH 
 
@@ -252,6 +258,8 @@ Y se abrira un editor de texto normalmente Vim hay en la primera fila es el nomb
          ssh-keygen -t ed25519 -C  "jheronconde032@gmail.com"
 
          Con esto una clave pública y privada para identificar la computadora con GitHub
+
+  ![crear](imagenes/CapturaGEnSSH.png)
 
       2._  Iniciar el agente SSH
 
@@ -271,27 +279,33 @@ Y se abrira un editor de texto normalmente Vim hay en la primera fila es el nomb
 
        Muestra tu clave pública para copiarla y registrarla en GitHub
 
+  ![llavepublica](imagenes/CapturaLLavePublica.png)
+
       5._Agregar la clave en GitHub
 
        creamos una nueva llave SSH y colocamos la clave publica hay
+
+![llaverepo](imagenes/SSHgithub.png)
 
       6._ Verificamos si se conecto
 
         ssh -T git@github.com
 
+   ![llaverepover](imagenes/VerificarConexion.png)     
+
       7._ Usar SSH en el repositorio y verificamos si funciono
  
-           git remote set-url origin git@github.com:usuario/repositorio.git
+           git remote set-url origin git@github.com:2CONDE2/Apuntes_Git_2026
 
            git remote -v
-
+![VERFICACIONFINAL](imagenes/usarsshrepo.png)
   ### Crear un repositorio en github
 
   bueno me acavo de dar cuenta que lo vingule al repositorio sin antes mostrar como se crea 
 
   pero no es complicado simplemente es ir a tu perfil de github e ir ala seccion new repository. 
 
-
+![NUEVOREPO](imagenes/capturanuevorep.png)
 
   para conectarlo se usan los siguientes comandos 
 
@@ -313,7 +327,19 @@ Y se abrira un editor de texto normalmente Vim hay en la primera fila es el nomb
 
      git clone git@github.com:2CONDE2/Apuntes_Git_2026
 
-     
+       
+![COPIAR](imagenes/clonarrepo.png)
+  con eso queda claro lo de subir archivos pero que pasa si alguien hiso aportes a mi repositorio y acepte los cambios como actualizo mi repositorio local?
+
+ 
+
+        git pull origin <rama>
+
+  git pull actualiza tu proyecto con los últimos cambios del repositorio remoto
+
+
+  
+       
 
 
    
