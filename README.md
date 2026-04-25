@@ -361,7 +361,7 @@ los comandos son los siguientes:
 
     para ver el vinculo actual
 
-
+![remoto](imagenes/capturagitremote.png)
 
     estos comandos sirven cuando estas usando una llave ssh con http varia un poco el asunto.
 
@@ -386,17 +386,20 @@ primero seria crear la nueva ssh
   
  es importante poner un id que tu reconoscas.
 
+![segundassh](imagenes/segundassh.png)
 
  luego de eso hay que crear el archivo config para configurar cada llave.
 
     cd ~/.ssh
-    touch config        
+    touch config    
+
+![config](imagenes/crearconfig.png)        
 
 luego hay que configurar el config:
 
     vim config 
 
-
+![modificarconfig](imagenes/modificarconfig.png)
 
 y subir la clave a github y probar la conexion pero eso ya sabemos como hacer.
 
@@ -415,4 +418,48 @@ y simplemente al comando tendrias que quitarle el --global
 Tiene que quedar claro que una configuracion local tiene mas prioridad que la global asi que si ya tienes una configuracion local no seria afectado.
 
 
-   
+   ### git checkout
+
+   empezamos con lo bueno
+   basicamente es el comando que nos permite cambiar la ubicacion actial de Head o mejor dicho el commit donde se encuientra el puntero  
+
+   Es util para movernos para inspeccionar, hacer cambios con menos riesgo etc
+
+   para empezar tienes que ver las ids de loc commits con git log --oneline
+
+![commitsactuales](imagenes/commitsaactuales.png)
+
+   luego cambiar al estado al momento donde quieres ir 
+
+   por eso es importante poner commits entendibles para saber a que momento quieres regresar.
+
+![pasado](imagenes/cambiodecommit.png)
+
+   es importante saber que si haces un cambio en un commit pasado y vualves al actual ese commit quedaria flotando por ende lo mejor seria crear una rama para eso
+
+
+eso sira de la siguiente forma:
+
+primero crear la rama con
+      
+       git checkout -b rama-de-pruebas
+
+       hacer un git add con el cambio que hiciste en este caso seri un archivo random que cree llamado checkout.md
+
+![checkout.md](image.png)
+
+y al final hacer el commit 
+
+![ramaneuva](<imagenes/crearlaramay hacer el commit.png>)
+
+en un caso normal ese commit se perderia pero como hicimos la rama ese commit se queda hay en ese momento del tiempo
+
+![y quedaria asi](imagenes/rams.png)
+
+y el asunto quedaria mas omenos asi
+
+una recomendacion seria antes de volver no tener nada pendiente en el stage 
+
+tampoco quedarse mucho tiempo en el pasado en la rama principal para eso crea de una vez otra rama 
+
+y que esto es para aprender normalmente en proyectos grandes no seria necesario.
