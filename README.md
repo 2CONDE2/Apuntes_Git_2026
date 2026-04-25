@@ -340,6 +340,34 @@ Y se abrira un editor de texto normalmente Vim hay en la primera fila es el nomb
 ## Clase  4️⃣  
 
 antes de empezar con los apuntes debo decir que el dia de hoy 24/4/2026 por cuestiones de tiempo no pude cumplir con el commit dentro del tiempo estimad pero ya hable con el encargado del area explicando mi situacion y me dijo que no habia problema gracias por la comprension.
+
+ya con esto aclarado puedo continuar 
+
+### Git Remote 
+
+Podiramos decir que es la forma de conectar el repositorio local con el remoto 
+
+los comandos son los siguientes:
+
+    git remote add origin git@github.com:2CONDE2/Apuntes_Git_2026.git
+
+    vincula tu repositorio local con uno remoto. 
+
+    git remote set-url origin git@github.com:2CONDE2/Apuntes_Git_2026.git
+
+    cambia la Url del repositorio 
+
+    git remote -v
+
+    para ver el vinculo actual
+
+
+
+    estos comandos sirven cuando estas usando una llave ssh con http varia un poco el asunto.
+
+    
+
+
   
        
 
