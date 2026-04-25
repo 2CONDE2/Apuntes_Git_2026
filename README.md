@@ -337,7 +337,9 @@ Y se abrira un editor de texto normalmente Vim hay en la primera fila es el nomb
 
   git pull actualiza tu proyecto con los últimos cambios del repositorio remoto
 
+## Clase  4️⃣  
 
+antes de empezar con los apuntes debo decir que el dia de hoy 24/4/2026 por cuestiones de tiempo no pude cumplir con el commit dentro del tiempo estimad pero ya hable con el encargado del area explicando mi situacion y me dijo que no habia problema gracias por la comprension.
   
        
 
