@@ -365,11 +365,54 @@ los comandos son los siguientes:
 
     estos comandos sirven cuando estas usando una llave ssh con http varia un poco el asunto.
 
-    
+### Multiples SSH 
 
+Hay un detalle aqui me costo bastante entender este asunto y tratare de ponerlo de la manera que mejor pude entender.
 
+Por qué usar varias claves SSH?
+
+Si tienes:
+
+    varias cuentas de GitHub
+    o quieres separar trabajo / personal
+
+necesitas una clave SSH para cada cuenta
+
+la idea es evitar conflictos, mas orden y mas seguridad.
+
+primero seria crear la nueva ssh
+
+    ssh-keygen -t ed25519 -C "jheronconde032@gmial.com" -f ~/.ssh/id_CondeSSH
   
-       
+ es importante poner un id que tu reconoscas.
+
+
+ luego de eso hay que crear el archivo config para configurar cada llave.
+
+    cd ~/.ssh
+    touch config        
+
+luego hay que configurar el config:
+
+    vim config 
+
+
+
+y subir la clave a github y probar la conexion pero eso ya sabemos como hacer.
+
+
+
+hay algo breve que agregar y es sobre las configuraciones locales normalmente haces git config --global user.name esto es de manera global 
+
+pero que pasa si quiero trabajar con otro correo o github pues es posible hacer solo una configuracion local 
+
+A que me refiero , un repositorio tenga su propia configuracion 
+
+y simplemente al comando tendrias que quitarle el --global 
+    
+      git config user.name 
+
+Tiene que quedar claro que una configuracion local tiene mas prioridad que la global asi que si ya tienes una configuracion local no seria afectado.
 
 
    
