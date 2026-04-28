@@ -463,3 +463,32 @@ una recomendacion seria antes de volver no tener nada pendiente en el stage
 tampoco quedarse mucho tiempo en el pasado en la rama principal para eso crea de una vez otra rama 
 
 y que esto es para aprender normalmente en proyectos grandes no seria necesario.
+
+## clase  5️⃣
+
+ ### Ramas 
+
+    Imagina que tu proyecto es una carretera principal.
+     La rama principal es la carretera original. 
+     Una rama es una desviación que haces para trabajar en algo nuevo sin afectar lo que ya funciona.
+
+
+  los comandos que uso son: 
+
+  git branch.- te muestra las ramas que tienes
+
+ git branch "nombre rama".-crea una rama apartir de la que estas
+
+ git branch -D "nombre rama" .- elimina una rama
+
+ la pregunta de ahora es ¿como me muevo a otra rama?
+
+ la realidad es que ya lo vimos cuando vimos el checkout te mueves de la misma forma pero con el nombre de la rama 
+
+ git checkout "nombre rama": te mueve a otra rama 
+
+
+ pero tambien puedes crear y moverte al mismo tiempo 
+
+ git checkout -b "nombre rama"
+
