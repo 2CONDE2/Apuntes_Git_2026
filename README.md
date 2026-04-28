@@ -492,3 +492,7 @@ y que esto es para aprender normalmente en proyectos grandes no seria necesario.
 
  git checkout -b "nombre rama"
 
+ ### git switch
+
+ que es esto, la realidad es que emos comprobado que checkout es un comando sobrecargado que puede usarse para distintas cosas asi que para evitar confuciones se creo git switch que esta enfocado unicamente en ramas.
+ mas que todo es para evitar que hagas alguna tonteria con checkout.
