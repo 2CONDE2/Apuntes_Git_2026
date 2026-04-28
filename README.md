@@ -496,3 +496,21 @@ y que esto es para aprender normalmente en proyectos grandes no seria necesario.
 
  que es esto, la realidad es que emos comprobado que checkout es un comando sobrecargado que puede usarse para distintas cosas asi que para evitar confuciones se creo git switch que esta enfocado unicamente en ramas.
  mas que todo es para evitar que hagas alguna tonteria con checkout.
+
+### Git Flow 
+
+ Empezamos con lo bueno
+
+ Git Flow es un ambiente de trabajo en grupo deonde el trabajo se divide de la siguiente forma:
+
+ donde el trabajo esta dividido en ramas
+
+ main.- la rama donde esta la version del proyecto mas estable por asi decirse el que esta lito para funcionar
+
+develope.- la rama donde se pueban las actualizaciones antes de llegar a main es donde realmente se trabaja
+
+feature.- las ramas donde se agregan funciones nuevas ojo estas siempre se crean apartir de develope
+
+hotfix.- para solucion de bugs o errores inesperados
+
+release.- es una rama de pruebas donde se testea el funcionamiento del proyecto
