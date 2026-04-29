@@ -552,3 +552,8 @@ git merge --no--ff rama
    
    ahora esto simplemente es para poder hacer un commit. 
   
+ahora que pasa si nos encontramos con un comflicto
+ 
+ por ejemplo:
+
+ Este cambio viene desde feature/conflict-test
