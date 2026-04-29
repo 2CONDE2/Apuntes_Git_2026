@@ -548,16 +548,53 @@ git merge --no--ff rama
 
      Este es importante hace el merge incluyendo un commit de ese merge
 
+![merge1](imagenes/ramaparamerge.png)
+
   para verlo ahora me movi a una rama continuando el proyecto 
    
+![merge2](imagenes/preparandoramamerge.png)
+
    ahora esto simplemente es para poder hacer un commit
 
 ahora estamos queriendo  ver el conflicto 
 
 ahora que pasa si nos encontramos con un comflicto
 
+![conflicto](<imagenes/rama para conflictos.png>)
+
 Este cambio viene desde main
  
 
  Este cambio viene desde feature/conflict-test
 
+ despues de esos cambios pasa esto al hacer merge 
+
+ ![cof](imagenes/conflictoenconsola.png)
+
+ ![conflictopresente](imagenes/conflictopresente.png)
+ nos muestra exactamente donde esta el conflicto
+
+para solucionarlo eliminamos todo lo generado y acomodamos todo 
+
+hacemos git add y un commet para guardarlo
+
+![solucion](<imagenes/solucion de comflicto.png>)
+
+y vemos que ya se pudo hacer el merge 
+
+
+Puede pasar que al hacer un trabajo grupal por ejemplo al usar un ambito como git flow alguien mas trabaje la rama que tu estas trabajando y se genere un conflicto al hacer el merge la solucion basicamente seria la misma 
+
+pero para evitar eso es importante la comunicacion o tambien la herramiento PR que se ver mañana.
+
+antes de terminar los apuntes de hoy quiero aclarar que el dia de hoy 28/4/2026 tuve un problema con la coneccion y no se envio mi formulario de asistencia. 
+
+pero tengo pruebas de que si estuve en la clase y llene el formulario 
+
+![clase](<imagenes/DIA 6.png>)
+
+hay se puede ver la fecha e incluso el llenado de fourmulario y participacion en la clase 
+
+incluso me gane puntitos por participar .
+
+hracias por la comprencion.
