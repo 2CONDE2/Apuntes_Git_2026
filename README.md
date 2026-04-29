@@ -550,7 +550,14 @@ git merge --no--ff rama
 
   para verlo ahora me movi a una rama continuando el proyecto 
    
-   ahora esto simplemente es para poder hacer un commit. 
-  
+   ahora esto simplemente es para poder hacer un commit
+
 ahora estamos querien ver el conflicto 
 Este cambio viene desde main
+
+ahora que pasa si nos encontramos con un comflicto
+ 
+ por ejemplo:
+
+ Este cambio viene desde feature/conflict-test
+
