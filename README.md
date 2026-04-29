@@ -552,3 +552,5 @@ git merge --no--ff rama
    
    ahora esto simplemente es para poder hacer un commit. 
   
+ahora estamos querien ver el conflicto 
+Este cambio viene desde main
