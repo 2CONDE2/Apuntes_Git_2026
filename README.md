@@ -446,8 +446,8 @@ primero crear la rama con
 
        hacer un git add con el cambio que hiciste en este caso seri un archivo random que cree llamado checkout.md
 
-![checkout.md](image.png)
 
+![rea](imagenes/image.png)
 y al final hacer el commit 
 
 ![ramaneuva](<imagenes/crearlaramay hacer el commit.png>)
@@ -472,14 +472,20 @@ y que esto es para aprender normalmente en proyectos grandes no seria necesario.
      La rama principal es la carretera original. 
      Una rama es una desviación que haces para trabajar en algo nuevo sin afectar lo que ya funciona.
 
-
+![ramas](imagenes/Ramas.png)
   los comandos que uso son: 
 
   git branch.- te muestra las ramas que tienes
 
+  ![branch](imagenes/gitbranch.png)
+
  git branch "nombre rama".-crea una rama apartir de la que estas
 
+ ![crear](imagenes/crearramas.png)
+
  git branch -D "nombre rama" .- elimina una rama
+
+![eliminar](imagenes/eliminarrama.png)
 
  la pregunta de ahora es ¿como me muevo a otra rama?
 
@@ -487,21 +493,28 @@ y que esto es para aprender normalmente en proyectos grandes no seria necesario.
 
  git checkout "nombre rama": te mueve a otra rama 
 
+![mover](imagenes/moveraotrarama.png)
 
  pero tambien puedes crear y moverte al mismo tiempo 
 
  git checkout -b "nombre rama"
+
+ ![crearymover](imagenes/crearymover.png)
 
  ### git switch
 
  que es esto, la realidad es que emos comprobado que checkout es un comando sobrecargado que puede usarse para distintas cosas asi que para evitar confuciones se creo git switch que esta enfocado unicamente en ramas.
  mas que todo es para evitar que hagas alguna tonteria con checkout.
 
+ ![switch](imagenes/switch.png)
+
 ### Git Flow 
 
  Empezamos con lo bueno
 
  Git Flow es un ambiente de trabajo en grupo deonde el trabajo se divide de la siguiente forma:
+
+ ![flow](imagenes/gitflow.webp)
 
  donde el trabajo esta dividido en ramas
 
@@ -514,3 +527,28 @@ feature.- las ramas donde se agregan funciones nuevas ojo estas siempre se crean
 hotfix.- para solucion de bugs o errores inesperados
 
 release.- es una rama de pruebas donde se testea el funcionamiento del proyecto
+
+## Clase  6️⃣
+
+ ### MERGE 
+
+ tratamos con quisa el ambito mas importanto de Git.
+
+ que hace merge? convina 2 ramas obvieamente tiene que tener sentido esa convinacion como que una rama sea extencion de otra 
+
+ vamos con los comandos:  
+
+ git fetch
+
+    Trae commits nuevos del remoto
+
+    Actualiza referencias como origin/main
+
+git merge --no--ff rama
+
+     Este es importante hace el merge incluyendo un commit de ese merge
+
+  para verlo ahora me movi a una rama continuando el proyecto 
+   
+   ahora esto simplemente es para poder hacer un commit. 
+  
