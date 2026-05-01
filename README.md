@@ -640,7 +640,7 @@ hracias por la comprencion.
 
  git push origin rama
 
-### Crear PR en GitHub
+Crear PR en GitHub
 
 esta es la manera correcta de uso de trabajo a lo que pude investigar y complementar ala clase 
 El problema radica en git fech ya que a lo que pude leer llega ser innecesario el uso ya que git fech descarga los cambios y git pull hace lo mismo e incluso mas completo 
@@ -653,3 +653,27 @@ no rompe nada pero es innecesario no tendria sentido hacerlo 2 veces.
 ahora veremos un ejemplo
  
  esta linea es para el PR un cambio sin importancia.
+
+ ## Clase 8️⃣
+
+ aver por tercera vez creo esto
+ 
+ que paso pues me di cuenta que es importante hacer el git add antes de el stash ya que al parecer elmina lo que no esta en stage y bueno asi se aprende supongo.
+
+ ### git stash 
+
+ es la manera de guardar cambios sin la necesidad de hacer commits 
+
+ git stash 
+
+     simplemente guarda los cambios
+
+ git stash -m ""
+      
+      pone un nombre al stash 
+
+ git stash list 
+
+      te muestra toso los stash realizados     
+
+      
