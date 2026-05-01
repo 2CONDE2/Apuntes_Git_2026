@@ -599,7 +599,7 @@ incluso me gane puntitos por participar .
 
 hracias por la comprencion.
 
-### Clase 7️⃣
+## Clase 7️⃣
 
 ### PULL REQUEST 
 
@@ -654,6 +654,22 @@ ahora veremos un ejemplo
  
  esta linea es para el PR un cambio sin importancia.
 
+ luego de crear este cambio en una rama subimos la rama y hacemos una solicitud de PR
+
+ ![solicitud](image.png)
+
+ creamos el Pr y esperamos a que sea aceptado y postereormente mergeado
+
+ ![pr](image-1.png)
+
+ y una vez realizado eliminar la rama por buenas practicas 
+
+ ![ramadelete](<imagenes/eliminar despues de pr.png>)
+
+ aqui un ejemplo de como se ve con varias personas oar un pr 
+
+ ![varios](<imagenes/pullrequest .png>)
+
  ## Clase 8️⃣
 
  aver por tercera vez creo esto
@@ -672,26 +688,36 @@ ahora veremos un ejemplo
       
       pone un nombre al stash 
 
+  ![stash](imagenes/stash.png)    
+
  git stash list 
 
-      te muestra toso los stash realizados     
+      te muestra toso los stash realizados 
+  
+  ![lista](imagenes/stashlist.png)    
 
  ### git diff 
 
   Es para ver los cambios realizados en los archivos
 
-        git diff 
+  git diff 
 
         muestra los cambios que no estan aun en stage 
+
+![diff](imagenes/diff.png)  
 
         git diff .
 
         lo mismo pero especifica la carpeta
         
+![diff.](imagenes/diff..png)  
+
         git diff archivo
 
         muestra los cambios de un archivo especifico
-  
+
+![readmediff](imagenes/diffReadme.png)
+
           git diff --staged 
 
           cambios que ya estan en stage 
@@ -726,4 +752,13 @@ ahora veremos un ejemplo
   y hacer el push para solucionar el problema.
 
 
-           
+ ## CONCLUSIONES
+
+ Quiero contar un poco de mi experiencia en las clases para empezar no puede creer que negligente era al crear commits ya que se puede ver que los de el primer dia dejan mucho que desear 
+
+ A medida que fui avanzando pude mejorar poco a poco como los hacia llegando al final con los commits que me acostumbre a hacer y con buenas practicas de por medio 
+
+     git commit -m "docs(readme): cambio simple"
+
+ No mentire lei y me ayude con la IA para poder hacerlos de manera correcta donde entre parentecis se pone el documento que esta recibiendo la modificaion     
+
