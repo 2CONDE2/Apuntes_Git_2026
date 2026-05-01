@@ -650,3 +650,6 @@ El problema radica en git fech ya que a lo que pude leer llega ser innecesario e
 Interesante en mi opinion. 
 no rompe nada pero es innecesario no tendria sentido hacerlo 2 veces.
 
+ahora veremos un ejemplo
+ 
+ esta linea es para el PR un cambio sin importancia.
