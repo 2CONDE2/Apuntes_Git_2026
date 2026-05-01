@@ -676,4 +676,54 @@ ahora veremos un ejemplo
 
       te muestra toso los stash realizados     
 
-      
+ ### git diff 
+
+  Es para ver los cambios realizados en los archivos
+
+        git diff 
+
+        muestra los cambios que no estan aun en stage 
+
+        git diff .
+
+        lo mismo pero especifica la carpeta
+        
+        git diff archivo
+
+        muestra los cambios de un archivo especifico
+  
+          git diff --staged 
+
+          cambios que ya estan en stage 
+ 
+
+          git diff --staged archivo 
+
+          lo mismo pero de un archivo
+
+
+          git diff rama1 rama2
+
+          compara 2 ramas 
+
+  Que hacer cuando se aprobo un PR distinto al mio que toco algo que yo toque
+
+  la solucion seria 
+
+  git fetch
+
+      En este caso si seria necesario para traer los cambios sin la necesidad de mergearlos.
+
+  ir a tu rama 
+
+       git switch Turama
+
+  actualizar con main
+
+       git merge main
+
+  resolver los conflictos si existen 
+  y hacer el push para solucionar el problema.
+
+
+           
