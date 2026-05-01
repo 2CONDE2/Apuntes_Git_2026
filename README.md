@@ -599,4 +599,54 @@ incluso me gane puntitos por participar .
 
 hracias por la comprencion.
 
-### clase
+### Clase 7️⃣
+
+### PULL REQUEST 
+
+ tal ves lo mas importante actualmete en trabajos en equipo este es la forma mas segura de convinar ramas pero ya hablamos a nivel de repositorio remoto que es donde se actua
+
+ funciona de la siguiente forma 
+
+ -creas tu rama con los cambios realizados
+
+ -creas una solicitud de PR 
+
+ -y al ser aceptada se hara el respectivo merge
+
+ y la forma correcta de uso seria
+
+ git checkout develop
+
+ git pull origin develop  
+
+ git checkout -b rama
+
+### Trabajas en tu rama
+
+ git push -u origin rama
+
+ git checkout develop
+
+ git pull origin develop
+
+ git checkout rama
+
+ git merge develop   
+
+### Resolver conflictos si hay
+ git add .
+
+ git commit
+
+ git push origin rama
+
+### Crear PR en GitHub
+
+esta es la manera correcta de uso de trabajo a lo que pude investigar y complementar ala clase 
+El problema radica en git fech ya que a lo que pude leer llega ser innecesario el uso ya que git fech descarga los cambios y git pull hace lo mismo e incluso mas completo 
+
+  git pull = git fetch + git merge
+
+Interesante en mi opinion. 
+no rompe nada pero es innecesario no tendria sentido hacerlo 2 veces.
+
