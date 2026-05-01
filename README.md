@@ -760,5 +760,29 @@ ahora veremos un ejemplo
 
      git commit -m "docs(readme): cambio simple"
 
- No mentire lei y me ayude con la IA para poder hacerlos de manera correcta donde entre parentecis se pone el documento que esta recibiendo la modificaion     
+ No mentire lei y me ayude con la IA para poder hacerlos de manera correcta y poder hacerlos en ingles, donde entre parentecis se pone el documento que esta recibiendo la modificaion algo que se me hiso interesante y quise implementar a mi forma de trabajar
 
+ bueno tambien quiero contar el momento donde tuve que hacer un pecado para solucionar un error que cometi 
+
+ al empezar el repositorio hice un cambio que no me convencio y quise eliminar el commit lo que pasa es que ese commit ya lo habia subio al repositorio remoto y en ese momento no pude encontrar una solucion factible a ese problema ya que al subir se podia ver 2 commits con el mismo nombre  
+
+![pecado](<imagenes/errorcommits .png>)
+
+la solucion que encontre fue arreglar el asunto en mi rep local y hacer un 
+
+    git push --force
+
+que por aun estar aprendiendo lo use ya que no encontraba otra solucion lo bueno es que funciono y ya comence a tener mas cuidad con lo que hacia commit 
+hubiera sido genial conocer git diff mas antes asi me evitaba esto xd
+
+y para finalizar decir que fue muy entretenido ir aprendiendo con estas clases 
+
+Y ayudarme a comprender de que n o estba usando git si no sobreviviendo en el por que mis repositorios de antes son un desastre antes de las clases
+
+adjunto pruebas:
+
+[nose ofenda auxi](https://github.com/2CONDE2/java-python-practica)
+
+y bueno gracias por las clases fueron de mucha utilidad . 
+
+## ATTE: JHERON DYLAN CONDE MARTINEZ
